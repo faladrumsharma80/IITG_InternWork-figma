@@ -12,38 +12,179 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Katibeh:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" />
 </head>
+<style>
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11.4px 27px 13.8px;
+      box-sizing: border-box;
+      position: relative;
+      max-width: 100%;
+    }
+    
+    .header-bg {
+      position: absolute;
+      top: 4.93px;
+      right: 0.3px;
+      bottom: -4.93px;
+      left: 0px;
+      background: white;
+      border: 1px solid black;
+      border-right-width: 6px;
+      border-bottom-width: 6px;
+      border-left-width: 1px;
+      border-top-width: 1px;
+      border-radius: 10px;
+      transform: rotate(-0.2deg);
+      transform-origin: 0 0;
+      mix-blend-mode: normal;
+    }
+    
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4.6px 0 0.5px;
+      box-sizing: border-box;
+      max-width: 100%;
+      gap: 20px;
+      z-index: 1;
+      text-align: left;
+      font-size: 1.25rem;
+      /* Adjusted for better responsiveness */
+      color: black;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    .logo {
+      flex-shrink: 0;
+    }
+    
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-center;
+      justify-content: flex-center;
+      padding: 8.1px 29px 0 0;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+    
+    .links-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-center;
+      justify-content: flex-center;
+      gap: 34.3px;
+      text-align: center;
+      font-size: 1rem;
+      color: black;
+    }
+    
+    .link-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-center;
+      justify-content: flex-center;
+      padding: 0 18px 0 0;
+    }
+    
+    .cta-button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 19px 10.6px;
+      box-sizing: border-box;
+      position: relative;
+      white-space: nowrap;
+      text-align: center;
+      font-size: 1rem;
+      color: white;
+    }
+    
+    .cta-bg {
+      position: absolute;
+      top: 0.53px;
+      right: 0px;
+      bottom: -0.53px;
+      left: 0px;
+      background: black;
+      border: 1px solid gray;
+      border-radius: 50px;
+      transform: rotate(-0.2deg);
+      transform-origin: 0 0;
+    }
+    
+    @media (max-width: 750px) {
+      .nav-links {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 450px) {
+      .links-container {
+        gap: 17px;
+      }
+    
+      .cta-button {
+        width: auto;
+        padding: 10px;
+        font-size: 0.875rem;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .logo {
+        margin-bottom: 10px;
+      }
+    
+      .cta-button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+</style>
 
 <body class="bg-[#FFFBF2]">
-    <div class="max-w-[1451px] mx-auto relative bg-floralwhite overflow-hidden flex flex-col items-end justify-start pt-[39.7px] px-[58px] pb-[24.7px] box-border gap-[90px] leading-[normal] tracking-[normal] mq450:gap-[22px] mq750:gap-[45px] mq750:pl-[29px] mq750:pr-[29px] mq750:box-border">
-        <section class="self-stretch flex flex-col items-start justify-start gap-[77.5px] max-w-full text-left text-[40px] text-black font-inter mq450:gap-[19px] mq750:gap-[39px]">
-            <div class="self-stretch flex flex-col items-end justify-start gap-[54.6px] max-w-full mq750:gap-[27px]">
-                <header class="flex-1 flex flex-row items-start justify-start pt-[11.4px] px-[27px] pb-[13.8px] box-border relative max-w-full">
-                    <div class="h-full w-full absolute !m-[0] top-[4.93px] right-[0.3px] bottom-[-4.93px] left-[0px] rounded-mini bg-white box-border [transform:_rotate(-0.2deg)] [transform-origin:0_0] mix-blend-normal border-t-[1px] border-solid border-black border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                    <nav class="m-0 flex-1 flex flex-row items-start justify-between pt-[4.6px] px-0 pb-[0.5px] box-border max-w-full gap-[20px] z-[1] text-left text-5xl text-black font-plus-jakarta-sans">
-                        <div class="flex flex-col items-start justify-start pt-[5px] px-0 pb-0"> <a class="[text-decoration:none] relative font-semibold text-[inherit] mix-blend-normal whitespace-nowrap" href="./index.html">IIT GUWAHATI</a> </div>
-                        <nav class="m-0 flex flex-col items-start justify-start pt-[8.1px] pb-0 pr-[29px] pl-0 box-border max-w-full mq750:hidden">
-                            <nav class="m-0 flex flex-row items-start justify-start gap-[34.3px] text-center text-xl text-black font-plus-jakarta-sans mq450:gap-[17px]">
-                                <div class="flex flex-col items-start justify-start py-0 pr-[18px] pl-0"> <a class="[text-decoration:none] relative font-semibold text-[inherit] inline-block [transform:_rotate(0.1deg)] min-w-[62px] whitespace-nowrap" href="./index.html">HOME </a> </div>
-                                <div class="flex flex-col items-start justify-start pt-px px-0 pb-0"> <a class="[text-decoration:none] relative font-semibold text-[inherit] inline-block [transform:_rotate(0.1deg)] min-w-[77px]" href="./events.html">EVENTS</a> </div> <a class="[text-decoration:none] relative font-semibold text-[inherit] [transform:_rotate(0.1deg)] mix-blend-normal" href="./MyPublication.html">PUBLICATIONS</a>
+    <div class="max-w-[1451px] mx-auto relative bg-floralwhite overflow-hidden flex flex-col items-end justify-center pt-[39.7px] px-[58px] pb-[24.7px] box-border gap-[90px] leading-[normal] tracking-[normal] mq450:gap-[22px] mq750:gap-[45px] mq750:pl-[29px] mq750:pr-[29px] mq750:box-border">
+        <section class="self-stretch flex flex-col items-center justify-center gap-[77.5px] max-w-full text-left text-[40px] text-black font-inter mq450:gap-[19px] mq750:gap-[39px]">
+            <div class="self-stretch flex flex-col justify-center gap-[54.6px] max-w-full mq750:gap-[27px]">
+                <header class="header flex-1 flex flex-row items-center justify-center pt-[11.4px] px-[27px] pb-[13.8px] box-border relative max-w-full">
+                    <div class="header-bg h-full w-full absolute !m-[0] top-[4.93px] right-[0.3px] bottom-[-4.93px] left-[0px] rounded-mini bg-white box-border [transform:_rotate(-0.2deg)] [transform-origin:0_0] mix-blend-normal border-t-[1px] border-solid border-black border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                    <nav class="nav-container m-0 flex-1 flex flex-row items-center justify-between pt-[4.6px] px-0 pb-[0.5px] box-border max-w-full gap-[20px] z-[1] text-left text-5xl text-black font-plus-jakarta-sans">
+                        <div class="logo flex flex-col items-center justify-center pt-[5px] px-0 pb-0"> <a class="[text-decoration:none] relative font-semibold text-[inherit] mix-blend-normal whitespace-nowrap" href="./index.html">IIT GUWAHATI</a> </div>
+                        <nav class="nav-links m-0 flex flex-col items-center justify-center pt-[8.1px] pb-0 pr-[29px] pl-0 box-border max-w-full">
+                            <nav class="links-container m-0 flex flex-row items-center justify-center gap-[34.3px] text-center text-xl text-black font-plus-jakarta-sans">
+                                <div class="link-item flex flex-col items-center justify-center py-0 pr-[18px] pl-0"> <a class="[text-decoration:none] relative font-semibold text-[inherit] inline-block [transform:_rotate(0.1deg)] min-w-[62px] whitespace-nowrap" href="./index.html">HOME</a> </div>
+                                <div class="link-item flex flex-col items-center justify-center pt-px px-0 pb-0"> <a class="[text-decoration:none] relative font-semibold text-[inherit] inline-block [transform:_rotate(0.1deg)] min-w-[77px]" href="./events.html">EVENTS</a> </div> <a class="[text-decoration:none] relative font-semibold text-[inherit] [transform:_rotate(0.1deg)] mix-blend-normal" href="./MyPublication.html">PUBLICATIONS</a>
                             </nav>
                         </nav>
-                        <div class="w-[145px] flex flex-row items-start justify-start pt-2 px-[19px] pb-[10.6px] box-border relative whitespace-nowrap text-center text-xl text-white">
-                            <div class="h-full w-full absolute !m-[0] top-[0.53px] right-[0px] bottom-[-0.53px] left-[0px] rounded-9xl bg-black box-border [transform:_rotate(-0.2deg)] [transform-origin:0_0] border-[1px] border-solid border-gray-100"> </div> <a class="[text-decoration:none] relative uppercase font-bold text-[inherit] inline-block min-w-[103px] z-[1]" href="./contact.html">REACH ME</a>
+                        <div class="cta-button w-[145px] flex flex-row items-center justify-center pt-2 px-[19px] pb-[10.6px] box-border relative whitespace-nowrap text-center text-xl text-white">
+                            <div class="cta-bg h-full w-full absolute !m-[0] top-[0.53px] right-[0px] bottom-[-0.53px] left-[0px] rounded-9xl bg-black box-border [transform:_rotate(-0.2deg)] [transform-origin:0_0] border-[1px] border-solid border-gray-100"> </div> <a class="[text-decoration:none] relative uppercase font-bold text-[inherit] inline-block min-w-[103px] z-[1]" href="./contact.html">REACH ME</a>
                         </div>
                     </nav>
                 </header>
-                <div class="self-stretch flex flex-row items-start justify-center py-0 pr-0 pl-2 box-border max-w-full">
-                    <div class="w-[372.2px] flex flex-row items-start justify-start pt-2.5 px-[59px] pb-[10.5px] box-border relative max-w-full mq450:pl-5 mq450:pr-5 mq450:box-border">
+                <div class="self-stretch flex flex-row items-center justify-center py-0 pr-0 pl-2 box-border max-w-full">
+                    <div class="w-[372.2px] flex flex-row items-center justify-center pt-2.5 px-[59px] pb-[10.5px] box-border relative max-w-full mq450:pl-5 mq450:pr-5 mq450:box-border">
                         <div class="h-full w-full absolute !m-[0] top-[0.01px] right-[-3.26px] bottom-[-2.71px] left-[0.16px] rounded-mini bg-white box-border [transform:_rotate(0.1deg)] [transform-origin:0_0] mix-blend-normal border-t-[1px] border-solid border-gray-200 border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
                         <h1 class="m-0 flex-1 relative text-inherit leading-[51.5px] font-bold font-inherit [transform:_rotate(0.1deg)] mix-blend-normal z-[1] mq450:text-5xl mq450:leading-[30px] mq750:text-13xl mq750:leading-[40px]"> Publications </h1>
                     </div>
                 </div>
             </div>
-            <div class="self-stretch flex flex-row items-start justify-start py-0 pr-[34px] pl-[33px] box-border max-w-full text-xl">
-                <div class="flex-1 flex flex-row items-start justify-between max-w-full gap-[20px] mq1275:flex-wrap">
-                    <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-start justify-start pt-[19px] pb-[23px] pr-[29px] pl-[31px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[329.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="w-[285px] relative leading-[125%] inline-block shrink-0 mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+            <div class="self-stretch flex flex-row items-center justify-center py-0 pr-[34px] pl-[33px] box-border max-w-full text-xl">
+                <div class="flex-1 flex flex-row items-center justify-between max-w-full gap-[20px] mq1275:flex-wrap">
+                  <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                    <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                    <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
                             <p class="m-0 font-semibold"> Recent Developments in Cladding and Coating Using Cold Metal Transfer Technology </p>
                             <p class="m-0 font-semibold"> Recent Developments in Cladding and Coating Using Cold Metal Transfer Technology </p>
                             <p class="m-0 font-semibold">&nbsp;</p>
@@ -51,9 +192,9 @@
                             <p class="m-0"> <i class="font-light">Springer · Nov 15, 2023</i> </p>
                         </div>
                     </div>
-                    <div class="w-[357.5px] rounded-mini bg-white box-border flex flex-row items-start justify-start pt-[19px] px-[29px] pb-[23px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[329.5px] w-[357.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="h-[275px] flex-1 relative leading-[125%] inline-block mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+                    <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                      <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                      <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
                             <p class="m-0 font-semibold"> Impact of Additive Manufacturing Technology on Education: A Review </p>
                             <p class="m-0 font-semibold"> Impact of Additive Manufacturing Technology on Education. </p>
                             <p class="m-0 font-semibold">&nbsp;</p>
@@ -63,9 +204,9 @@
                             <p class="m-0"> <i class="font-light">SpringerNature · Aug 29, 2023</i> </p>
                         </div>
                     </div>
-                    <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-start justify-start pt-6 pb-[18px] pr-[18px] pl-[25px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[329.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="w-[302px] relative leading-[125%] inline-block shrink-0 mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+                    <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                      <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                      <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
                             <p class="m-0 font-semibold"> Response of Coconut Coir Filler-Reinforced Epoxy Composite Toward Cyclic Loading: Fatigue Property Evaluation Response of Coconut Coir FillerReinf </p>
                             <p class="m-0 font-semibold"> orced Epoxy Comp site Toward Cyclic Loading: Fatigue Property Evaluation </p>
                             <p class="m-0 font-semibold">&nbsp;</p>
@@ -75,80 +216,76 @@
                 </div>
             </div>
         </section>
-        <section class="flex flex-row items-start justify-end pt-0 px-[33px] pb-[29px] box-border max-w-full text-left text-xl text-black font-inter">
-            <div class="w-[1259px] flex flex-col items-start justify-start gap-[89px] max-w-full mq450:gap-[22px] mq750:gap-[44px]">
-                <div class="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] mq1275:flex-wrap">
-                    <div class="h-[331.5px] w-[356.5px] rounded-mini bg-white box-border flex flex-row items-start justify-start py-[22px] pr-[29px] pl-[31px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="w-[285px] relative leading-[125%] inline-block shrink-0 mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
-                            <p class="m-0 font-semibold"> An Analytical model for estimation of build time in fused deposition modelling An Analytical model for estimation of build time in fused deposition modelling Wiley · </p>
-                            <p class="m-0 font-semibold"></p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">Spinger - Aug 1, 2022</i> </p>
-                        </div>
-                    </div>
-                    <div class="w-[357.5px] rounded-mini bg-white box-border flex flex-row items-start justify-start pt-5 pb-6 pr-[23px] pl-6 max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[331.5px] w-[357.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
-                            <p class="m-0 font-semibold"> A Fuzzy Set-Based Energy Consumption Model of Selective Laser Sintering </p>
-                            <p class="m-0 font-semibold"> A Fuzzy Set-Based Energy Consumption Model of Selective Laser Sintering. </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">Springer · Jun 13, 2021</i> </p>
-                        </div>
-                    </div>
-                    <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-start justify-start pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
-                            <p class="m-0 font-semibold"> Sustainability Analysis of Fused Deposition Model-ling Process Sustai- nability Analysis of Fused Deposition Modelling Process. </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">Springer · Apr 20, 2021</i> </p>
-                        </div>
+        <section class="flex flex-row items-center justify-end pt-0 px-[33px] pb-[29px] box-border max-w-full text-left text-xl text-black font-inter">
+            <div class="self-stretch flex flex-row flex-wrap items-center justify-between max-w-full gap-[20px] mq1275:flex-wrap">
+              <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+                        <p class="m-0 font-semibold"> An Analytical model for estimation of build time in fused deposition modelling An Analytical model for estimation of build time in fused deposition modelling Wiley · </p>
+                        <p class="m-0 font-semibold"></p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">Spinger - Aug 1, 2022</i> </p>
                     </div>
                 </div>
-                <div class="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] mq1275:flex-wrap">
-                    <div class="h-[329.5px] w-[356.5px] rounded-mini bg-white box-border flex flex-row items-start justify-end py-[33px] px-[26px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[329.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="h-[250px] w-[285px] relative leading-[125%] inline-block shrink-0 mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
-                            <p class="m-0 font-semibold"> Cost Comparison of Selective Laser Sintering with Injection Molding in the Presence of Uncer-tainties </p>
-                            <p class="m-0 font-semibold">&nbsp;</p>
-                            <p class="m-0 font-semibold">&nbsp;</p>
-                            <p class="m-0 font-semibold">&nbsp;</p>
-                            <p class="m-0 font-semibold">&nbsp;</p>
-                            <p class="m-0 font-semibold">&nbsp;</p>
-                            <p class="m-0"> <i class="font-light">World Scientific · Mar 14, 2021</i> </p>
-                        </div>
+                <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                  <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                  <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+                        <p class="m-0 font-semibold"> A Fuzzy Set-Based Energy Consumption Model of Selective Laser Sintering </p>
+                        <p class="m-0 font-semibold"> A Fuzzy Set-Based Energy Consumption Model of Selective Laser Sintering. </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">Springer · Jun 13, 2021</i> </p>
                     </div>
-                    <div class="w-[357.5px] rounded-mini bg-white box-border flex flex-row items-start justify-start pt-[31px] pb-[11px] pr-[15px] pl-[18px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[329.5px] w-[357.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="w-[313px] relative leading-[125%] inline-block shrink-0 mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
-                            <p class="m-0 font-semibold"> An Analytical Method for Assessing the Utility of Additive Manufacturing in an Organization, An Analytical Method for Assessing the Utility of Additive Manufacturing in an Organization. </p>
-                            <p class="m-0 font-semibold">&nbsp;</p>
-                            <p class="m-0 font-semibold">&nbsp;</p>
-                            <p class="m-0"> <i class="font-light">Springer · Oct 15, 2020</i> </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                        </div>
+                </div>
+                <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                    <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                    <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+                        <p class="m-0 font-semibold"> Sustainability Analysis of Fused Deposition Model-ling Process Sustai- nability Analysis of Fused Deposition Modelling Process. </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">Springer · Apr 20, 2021</i> </p>
                     </div>
-                    <div class="h-[329.5px] w-[356.5px] rounded-mini bg-white box-border flex flex-row items-start justify-start py-[33px] pr-[25px] pl-7 max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
-                        <div class="h-[329.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
-                        <div class="w-[292px] relative leading-[125%] inline-block shrink-0 mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
-                            <p class="m-0 font-semibold"> Fuzzy set based cost model of additive manuf- acturing with specific example of selective laser sintering Fuzzy set based cost model of additive manufacturing with specific example of selective laser sintering </p>
-                            <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
-                            <p class="m-0"> <i class="font-light">Springer · Sep 3, 2019</i> </p>
-                        </div>
+                </div>
+                <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                  <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                  <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+                        <p class="m-0 font-semibold"> Cost Comparison of Selective Laser Sintering with Injection Molding in the Presence of Uncer-tainties </p>
+                        <p class="m-0 font-semibold">&nbsp;</p>
+                        <p class="m-0 font-semibold">&nbsp;</p>
+                        <p class="m-0 font-semibold">&nbsp;</p>
+                        <p class="m-0 font-semibold">&nbsp;</p>
+                        <p class="m-0 font-semibold">&nbsp;</p>
+                        <p class="m-0"> <i class="font-light">World Scientific · Mar 14, 2021</i> </p>
+                    </div>
+                </div>
+                <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                  <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                  <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+                        <p class="m-0 font-semibold"> An Analytical Method for Assessing the Utility of Additive Manufacturing in an Organization, An Analytical Method for Assessing the Utility of Additive Manufacturing in an Organization. </p>
+                        <p class="m-0 font-semibold">&nbsp;</p>
+                        <p class="m-0 font-semibold">&nbsp;</p>
+                        <p class="m-0"> <i class="font-light">Springer · Oct 15, 2020</i> </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                    </div>
+                </div>
+                <div class="w-[356.5px] rounded-mini bg-white box-border flex flex-row items-center justify-center pt-5 pb-6 pr-6 pl-[30px] max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]">
+                  <div class="h-[331.5px] w-[356.5px] relative rounded-mini bg-white box-border hidden mix-blend-normal max-w-full border-t-[1px] border-solid border-dimgray border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
+                  <div class="flex-1 relative leading-[125%] mix-blend-normal z-[1] mq450:text-base mq450:leading-[20px]">
+                        <p class="m-0 font-semibold"> Fuzzy set based cost model of additive manuf- acturing with specific example of selective laser sintering Fuzzy set based cost model of additive manufacturing with specific example of selective laser sintering </p>
+                        <p class="m-0"> <i class="font-light">&nbsp;</i> </p>
+                        <p class="m-0"> <i class="font-light">Springer · Sep 3, 2019</i> </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="self-stretch flex flex-row items-start justify-end py-0 pr-px pl-0.5 box-border max-w-full text-center text-5xl text-black font-plus-jakarta-sans">
-            <div class="flex-1 flex flex-row items-start justify-center pt-[28.8px] pb-[26.5px] pr-5 pl-[22px] box-border relative max-w-full">
+        <section class="self-stretch flex flex-row items-center justify-end py-0 pr-px pl-0.5 box-border max-w-full text-center text-5xl text-black font-plus-jakarta-sans">
+            <div class="flex-1 flex flex-row items-center justify-center pt-[28.8px] pb-[26.5px] pr-5 pl-[22px] box-border relative max-w-full">
                 <div class="h-[calc(100%_-_2.7px)] w-[calc(100%_-_0.1px)] absolute !m-[0] top-[0px] right-[-0.07px] bottom-[2.7px] left-[0.17px] rounded-mini bg-white box-border [transform:_rotate(0.1deg)] [transform-origin:0_0] mix-blend-normal border-t-[1px] border-solid border-black border-r-[6px] border-b-[6px] border-l-[1px]"> </div>
                 <div class="relative leading-[125%] font-semibold z-[1] mq450:text-lgi mq450:leading-[24px]"> Faladrum Sharma | Indian Institute Of Technology Guwahati </div>
             </div>
