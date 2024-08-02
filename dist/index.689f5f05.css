@@ -2754,6 +2754,19 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[floralwhite\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 240 / var(--tw-bg-opacity));
+}
+
+.bg-\[FFFBF2\] {
+  background-color: FFFBF2;
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
   box-decoration-break: slice;
