@@ -7,15 +7,6 @@
       img: ".timeline__img"
     };
     selectors.item.eq(0).addClass(selectors.activeClass);
-    selectors.id.css(
-      "background-image",
-      "url(" +
-        selectors.item
-          .first()
-          .find(selectors.img)
-          .attr("src") +
-        ")"
-    );
 
     var itemLength = selectors.item.length;
     $(window).scroll(function() {
@@ -28,14 +19,6 @@
         var max = $(this).height() + $(this).offset().top;
         
         if (windowMid >= min && windowMid <= max) {
-          selectors.id.css(
-            "background-image",
-            "url(" +
-              $(this)
-                .find(selectors.img)
-                .attr("src") +
-              ")"
-          );
           selectors.item.removeClass(selectors.activeClass);
           $(this).addClass(selectors.activeClass);
         }
